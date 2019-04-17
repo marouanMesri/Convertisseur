@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Convertissor</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar navbar-fixed-top">
+            <div class="container navbar-default">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">CONVERTISSEUR D'UNITES</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li class="active"><a href="listeUnites.html">Liste des unités</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container-fluid">
+
+            <div class="container">
+                <div id="imgAccueil" class="img-responsive text-center">
+                    <img src="../img/imgAccueil.jpg" alt="lunettes_geantes">
+                </div>
+                <div>
+                    <h1 id="myTitle">CONVERTISSEUR D'UNITES</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+
+            <!--BOUTONS A GAUCHE-->
+            <section class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-4 col-sm-6 col-xs-6">
+                    <button type="button" name="longueur" class="imgBouton"><a href="longueur.html"><img src="../img/btnLongueur.png"
+                                class="img-responsive text-center" alt="btnLongueur"></a>LONGUEUR</button>
+                </div>
+                <div class="col-lg-12 col-md-4 col-sm-6 col-xs-6">
+                    <button type="button" name="masse" class="imgBouton"><a href="masse.html"><img src="../img/btnMasse.png"
+                                class="img-responsive text-center" alt="btnMasse"></a>MASSE</button>
+                </div>
+                <div class="col-lg-12 col-md-4 col-sm-6 col-xs-6">
+                    <button type="button" name="temperature" class="imgBouton"><a href="temperature.html"><img src="../img/btnTemperature.png"
+                                class="img-responsive text-center" alt="btnTemperature"></a>TEMPERATURE</button>
+                </div>
+                <div class="col-lg-12 col-md-4 col-sm-6 col-xs-6">
+                    <button type="button" name="consommation" class="imgBouton"><a href="consommation_carburant.html"><img src="../img/btnEssence.png"
+                                class="img-responsive text-center" alt="btnconsommation"></a>CONSOMMATION</button>
+                </div>
+            </section>
+
+
+            <!--CORPS DE LA LISTE-->
+            <section class="col-lg-7 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                <!--A MODIFIER EN CAS D'AJOUT DE NOUVELLE GRANDEUR-->
+
+                <!--LONGUEURS-->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="imgGrandeur" class="img-responsive text-center">
+                        <img src="../img/imgLongueurNB.jpg" alt="saut_longueur">
+                    </div>
+                </div>
+                <table class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <tr>
+                        <th>Unité</th>
+                        <th>Symbole</th>
+                        <th>Convertion en mètre</th>
+                    </tr>
+                    <tr>
+                        <td>yottamètre</td>
+                        <td>Ym</td>
+                        <td>10<sup>24</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>zettamètre</td>
+                        <td>Zm</td>
+                        <td>10<sup>21</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>examètre</td>
+                        <td>Em</td>
+                        <td>10<sup>18</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>pétamètre</td>
+                        <td>Pm</td>
+                        <td>10<sup>15</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>téramètre</td>
+                        <td>Tm</td>
+                        <td>10<sup>12</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>gigamètre</td>
+                        <td>Gm</td>
+                        <td>10<sup>9</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>mégamètre</td>
+                        <td>Mm</td>
+                        <td>10<sup>6</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>kilomètre</td>
+                        <td>km</td>
+                        <td>10<sup>3</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>hectomètre</td>
+                        <td>hm</td>
+                        <td>10<sup>2</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>décamètre</td>
+                        <td>dam</td>
+                        <td>10<sup>1</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>mètre</td>
+                        <td>m</td>
+                        <td>unité de référence</td>
+                    </tr>
+                    <tr>
+                        <td>décimètre</td>
+                        <td>dm</td>
+                        <td>10<sup>-1</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>centimètre</td>
+                        <td>cm</td>
+                        <td>10<sup>-2</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>millimètre</td>
+                        <td>mmm</td>
+                        <td>10<sup>-3</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>micromètre</td>
+                        <td>µm</td>
+                        <td>10<sup>-6</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>nanomètre</td>
+                        <td>nm</td>
+                        <td>10<sup>-9</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>picomètre</td>
+                        <td>pm</td>
+                        <td>10<sup>-12</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>femtomètre</td>
+                        <td>fm</td>
+                        <td>10<sup>-15</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>attomètre</td>
+                        <td>am</td>
+                        <td>10<sup>-18</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>zeptomètre</td>
+                        <td>zm</td>
+                        <td>10<sup>-21</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>yoctomètre</td>
+                        <td>ym</td>
+                        <td>10<sup>-24</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>mille marin</td>
+                        <td>NM</td>
+                        <td>1 852 mètres</td>
+                    </tr>
+                    <tr>
+                        <td>unite astronomique</td>
+                        <td>ua</td>
+                        <td>149 597 870 700 mètres</td>
+                    </tr>
+                    <tr>
+                        <td>année lumière</td>
+                        <td>al</td>
+                        <td>9 461 x 10<sup>12</sup> mètres</td>
+                    </tr>
+                    <tr>
+                        <td>parsec</td>
+                        <td>pc</td>
+                        <td>((648 000 / &pi;) x 9 461 x 10<sup>12</sup> mètres)</td>
+                    </tr>
+                    <tr>
+                        <td>doigt</td>
+                        <td>doigt</td>
+                        <td>0,0185 mètres</td>
+                    </tr>
+                    <tr>
+                        <td>pouce</td>
+                        <td>inch</td>
+                        <td>0,0254 mètres</td>
+                    </tr>
+                    <tr>
+                        <td>main (en : hand)</td>
+                        <td>hd</td>
+                        <td>0,1016 mètres</td>
+                    </tr>
+                    <tr>
+                        <td>pied (en : foot)</td>
+                        <td>ft</td>
+                        <td>0,3048 mètres</td>
+                    </tr>
+                    <tr>
+                        <td>verge (en : yard)</td>
+                        <td>yd</td>
+                        <td>0,9144 mètres</td>
+                    </tr>
+                    <tr>
+                        <td>aune</td>
+                        <td>aune</td>
+                        <td>1,2192 mètres</td>
+                    </tr>
+                    <tr>
+                        <td>toise</td>
+                        <td>toise</td>
+                        <td>1,949 mètres</td>
+                    </tr>
+                    <tr>
+                        <td>mille terreste (en : mile)</td>
+                        <td>mi</td>
+                        <td>1 609,344 mètres</td>
+                    </tr>
+                    <tr>
+                        <td>lieue (en : league)</td>
+                        <td>lieue</td>
+                        <td>4 828,032 mètres</td>
+                    </tr>
+                </table>
+                <div class="col-lg-offset-9 col-lg-3 col-md-offset-8 col-md-4 col-sm-offset-6 col-sm-6 col-xs-offset-4 col-xs-8">
+                    <a href="https://fr.wikipedia.org/wiki/Unit%C3%A9_de_longueur" target="_blank"><button class="moreInfos"
+                            type="button">PLUS D'INFOS</button></a>
+                </div>
+
+                <!--MASSE-->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="imgGrandeur" class="img-responsive text-center">
+                        <img src="../img/imgMasseNB.jpg" alt="femme_haltères">
+                    </div>
+                </div>
+                <table class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <tr>
+                        <th>Unité</th>
+                        <th>Symbole</th>
+                        <th>Convertion en kilogramme</th>
+                    </tr>
+                    <tr>
+                        <td>tonne</td>
+                        <td>t</td>
+                        <td>10<sup>3</sup> kilogramme</td>
+                    </tr>
+                    <tr>
+                        <td>quintal</td>
+                        <td>q</td>
+                        <td>10<sup>2</sup> kilogramme</td>
+                    </tr>
+                    <tr>
+                        <td>kilogramme</td>
+                        <td>kg</td>
+                        <td>unité de référence</td>
+                    </tr>
+                    <tr>
+                        <td>hectogramme</td>
+                        <td>hg</td>
+                        <td>10<sup>-1</sup> kilogramme</td>
+                    </tr>
+                    <tr>
+                        <td>decagramme</td>
+                        <td>dag</td>
+                        <td>10<sup>-2</sup> kilogramme</td>
+                    </tr>
+                    <tr>
+                        <td>gramme</td>
+                        <td>g</td>
+                        <td>10<sup>-3</sup> kilogramme</td>
+                    </tr>
+                    <tr>
+                        <td>décigramme</td>
+                        <td>dg</td>
+                        <td>10<sup>-4</sup> kilogramme</td>
+                    </tr>
+                    <tr>
+                        <td>centigramme</td>
+                        <td>cg</td>
+                        <td>10<sup>-5</sup> kilogramme</td>
+                    </tr>
+                    <tr>
+                        <td>milligramme</td>
+                        <td>mg</td>
+                        <td>10<sup>-6</sup> kilogramme</td>
+                    </tr>
+                    <tr>
+                        <td>microgramme</td>
+                        <td>µg</td>
+                        <td>10<sup>-9</sup> kilogramme</td>
+                    </tr>
+                </table>
+                <div class="col-lg-offset-9 col-lg-3 col-md-offset-8 col-md-4 col-sm-offset-6 col-sm-6 col-xs-offset-4 col-xs-8">
+                    <a href="https://www.lememento.fr/unites-de-masse" target="_blank"><button class="moreInfos" type="button">PLUS
+                            D'INFOS</button></a>
+                </div>
+
+                <!--TEMPERATURES-->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="imgGrandeur" class="img-responsive text-center">
+                        <img src="../img/imgTemperatureNB.jpg" alt="escalade_glace">
+                    </div>
+                </div>
+                <table class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <tr>
+                        <th>Unité</th>
+                        <th>Symbole</th>
+                        <th>Convertion en degrés Celsius</th>
+                    </tr>
+                    <tr>
+                        <td>Celsius</td>
+                        <td>°C</td>
+                        <td>unité de référence</td>
+                    </tr>
+                    <tr>
+                        <td>Kelvin</td>
+                        <td>K</td>
+                        <td>−273,15 °C</td>
+                    </tr>
+                    <tr>
+                        <td>Fahrenheit</td>
+                        <td>°F</td>
+                        <td>(1,8 * t°C) + 32</td>
+                    </tr>
+                    <tr>
+                        <td>Rankine</td>
+                        <td>°Ra</td>
+                        <td>(1,8 * t°C) + 491,67</td>
+                    </tr>
+                    <tr>
+                        <td>Reaumur</td>
+                        <td>°Ré</td>
+                        <td>(0,8 * t°C)</td>
+                    </tr>
+                </table>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 note">NOTE : Le zéro absolu est la température la
+                    plus basse qui puisse exister. Selon un accord international, la valeur du zéro absolu est fixée à
+                    −273,15 °C (Celsius) ou −459,67 °F (Fahrenheit). Par définition, les échelles Kelvin et Rankine
+                    prennent le zéro absolu comme valeur 0.
+                </div>
+                <div class="col-lg-offset-9 col-lg-3 col-md-offset-8 col-md-4 col-sm-offset-6 col-sm-6 col-xs-offset-4 col-xs-8">
+                    <a href="https://fr.wikipedia.org/wiki/Temp%C3%A9rature" target="_blank"><button class="moreInfos"
+                            type="button">PLUS D'INFOS</button></a>
+                </div>
+                 <!--CONSOMMATION DE CARBURANT-->
+                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="imgGrandeur" class="img-responsive text-center">
+                        <img src="../img/imgEssenceNB.png" alt="gilet_jaune">
+                    </div>
+                </div>
+                <table class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <tr>
+                        <th>Unité</th>
+                        <th>Symbole</th>
+                        <th>Convertion en L/100km</th>
+                    </tr>
+                    <tr>
+                        <td>Mile par gallon americain</td>
+                        <td>m/ga</td>
+                        <td>235,215 L/100km</td>
+                    </tr>
+                    <tr>
+                        <td>Mile par gallon imperial</td>
+                        <td>m/gi</td>
+                        <td>282,481 L/100km</td>
+                    </tr>
+                    <tr>
+                        <td>Kilomètre par litre</td>
+                        <td>km/l</td>
+                        <td>100 L/100km</td>
+                    </tr>
+                    <tr>
+                        <td>Litre aux 100 kilomètres</td>
+                        <td>L/100km</td>
+                        <td>unité de référence</td>
+                    </tr>
+                    
+                </table>
+                <div class="col-lg-offset-9 col-lg-3 col-md-offset-8 col-md-4 col-sm-offset-6 col-sm-6 col-xs-offset-4 col-xs-8">
+                    <a href="https://www.convertworld.com/fr/consommation-de-carburant/" target="_blank"><button class="moreInfos" type="button">PLUS
+                            D'INFOS</button></a>
+                </div>
+
+            </section>
+
+            <!--PUBLICITE-->
+            <section class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div id="pub">
+                    <img src="../img/bandeauPub.png" alt="bandeauPub">
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>

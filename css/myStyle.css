@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(83, 81, 121);
+}
+
+.container {
+    background-color: white;
+}
+
+#imgAccueil {
+    width: 100%;
+}
+
+#myTitle {
+    background-color: rgb(83, 81, 121);
+    color: rgb(153, 152, 175);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.imgIndex:hover {
+    border:solid 2px rgb(60, 58, 96);
+}
+
+.imgBouton {
+    margin-bottom: 4%;
+    background-color: rgb(60, 58, 96);
+    color: white;
+    border-radius: 10px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.imgBouton:hover {
+    background-color: rgb(83, 81, 121);
+}
+
+.form {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2%;
+    background-color: rgb(153, 152, 175);
+    border-radius: 10px;
+}
+
+.formInfo {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2%;
+    background-color: rgb(83, 81, 121);
+    color:white;
+    border-radius: 10px;
+}
+
+.convertir {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background-color: rgb(60, 58, 96);
+    border-radius: 10px;
+    color: white;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.convertir:hover {
+    background-color: rgb(83, 81, 121);
+}
+
+.moreInfos {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 2%;
+    background-color: rgb(60, 58, 96);
+    border-radius: 10px;
+    color: white;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.moreInfos:hover {
+    background-color: rgb(83, 81, 121);
+}
+
+.note{
+    background-color:rgb(220,220,200);
+    margin-top:10px;
+    padding: 2%;
+}
+
+#imgGrandeur {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+th{
+    background-color: rgb(153, 152, 175);
+}
+
+
+table tr:nth-child(odd){
+    background-color:rgb(220,220,200);
+  }
